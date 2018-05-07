@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h1 class="user-name">{{user.name}}</h1>
+  <h3 class="user-handle">{{user.screenName|at}}</h3>
+  <img class="profile-img" *ngIf="user.profileImgBig" [src]="user.profileImgBig" alt="">
+  <ul class="user-stats">
+    <li>Tweets: {{user.tweetsCount}}</li>
+    <li>Followers: {{user.followersCount}}</li>
+    <li>Following: {{user.friendsCount}}</li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+  background-color: #cb7575;
+}
+
+a {
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #cb7575;
+}
+
+a:hover {
+  background-color: #d87676;
+}
+a.active, a.active:hover {
+  background-color: #414973;
+}

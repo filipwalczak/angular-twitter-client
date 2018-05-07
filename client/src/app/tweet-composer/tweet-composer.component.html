@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="tweet-composer-container grid-item">
+    <h2>Tweet Composer</h2>
+    <form class="tweet-composer-form" (ngSubmit)="onSubmit(composer)" #composer="ngForm">
+      <textarea class="tweet-body"
+             type="text"
+             name="tweet-text"
+             value=""
+             autofocus="true"
+             [maxLength]="tweetMaxLength"
+             required
+             placeholder="What's happening?"
+             ngModel
+             #tweetText="ngModel"></textarea>
+      <p>{{tweetText.value ? tweetText.value.length : 0}}/{{tweetMaxLength}}</p>
+      <button type="submit"
+              [disabled]="!composer.valid">Post a Tweet</button>
+    </form>
+  </div>
+</div>

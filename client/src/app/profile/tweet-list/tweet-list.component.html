@@ -1,0 +1,24 @@
+<div>
+  <h2>Your Last Tweets</h2>
+  <ul>
+    <li *ngFor="let tweet of tweetList">
+      <a [href]="tweet.tweetUrl" target="_blank">
+        <div class="tweet">
+          <div class="tweet-header">
+            <img [src]="tweet.authorProfileImg" [alt]="tweet.author" class="profile-img">
+            <div class="tweet-content">
+              <p class="user-name">{{tweet.author}}</p>
+              <p class="user-handler">{{tweet.authorScreenName | at}}</p>
+              <p>{{tweet.text}}</p>
+              <p>{{tweet.date | date:'short'}}</p>
+            </div>
+          </div>
+          <ul class="tweet-data">
+            <li>Retweeted: {{tweet.retweetCount}}</li>
+            <li>Favorited: {{tweet.favoriteCount}}</li>
+          </ul>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

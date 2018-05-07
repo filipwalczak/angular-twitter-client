@@ -1,0 +1,5 @@
+<div *ngIf="notification && showNotification"
+      (click)="showNotification = !showNotification"
+      class="notification">
+  <p>{{ notification }}</p>
+</div>

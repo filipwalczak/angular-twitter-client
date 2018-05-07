@@ -1,0 +1,18 @@
+.notification {
+    position: absolute;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 1em;
+    box-shadow: 0px 10px 14px -9px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    top: 1em;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    min-height: 1.5em;
+    min-width: 10em;
+    max-width: 20em;
+    padding: 1em;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+h2 {
+  padding: 0.5rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tweet {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 0.5em 1.5em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #14171a;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tweet:hover {
+  background-color: #f4f4f4;
+}
+
+.tweet p {
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.tweet-header {
+  display: flex;
+}
+
+.tweet-content {
+
+}
+
+.tweet-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  font-weight: bolder;
+  color: #14171a;
+}
+
+.tweet-data li {
+  margin-right: 0.4em;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  min-width: 3em;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.user-handler {
+  font-weight: lighter;
+  color: #22272d;
+}

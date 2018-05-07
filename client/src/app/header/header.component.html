@@ -1,0 +1,6 @@
+<header>
+  <a routerLink="/profile" *ngIf="signedIn" routerLinkActive="active">Profile</a>
+  <a routerLink="/tweet-composer" *ngIf="signedIn" routerLinkActive="active">Tweet Composer</a>
+  <a (click)="signIn()" *ngIf="!signedIn" routerLinkActive="active">Log in</a>
+  <a (click)="signOut()" *ngIf="signedIn" routerLinkActive="active">Log out</a>
+</header>

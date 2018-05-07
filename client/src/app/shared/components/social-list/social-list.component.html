@@ -1,0 +1,22 @@
+<div>
+  <h2>{{title}}</h2>
+  <ul>
+    <li *ngFor="let user of users" class="user">
+      <a [href]="user.url" target="_blank">
+        <div>
+          <div class="user-header">
+            <img [src]="user.profileImg" [alt]="user.name" class="profile-img">
+              <div>
+                <p class="user-name">{{user.name}}</p>
+                <p class="user-handle">{{user.screenName | at}}</p>
+                <p>{{user.location}}</p>
+              </div>
+          </div>
+          <div>
+            <p>{{user.description}}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
