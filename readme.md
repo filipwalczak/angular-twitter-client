@@ -1,6 +1,10 @@
 # Angular Twitter Client
+
 Very basic Twitter client built with Angular and Node.js.
 Features: authenticate to Twitter account via OAuth; view profile info, latest tweets, followers and following lists; post new tweets.
+
+[View demo](https://angular-twitter-client.now.sh)
+Note: The app uses HttpOnly cookie to authenticate users. Your browser needs to allow third party cookies to run the app.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
